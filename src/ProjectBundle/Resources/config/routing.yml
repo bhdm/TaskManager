@@ -1,0 +1,4 @@
+project:
+    path:      /
+    defaults:  { _controller: ProjectBundle:Default:index }
+    methods: [GET]

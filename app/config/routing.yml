@@ -1,0 +1,10 @@
+task:
+    resource: "@TaskBundle/Resources/config/routing.yml"
+    prefix:   /task
+
+project:
+    resource: "@ProjectBundle/Resources/config/routing.yml"
+    prefix:   /project
+
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
