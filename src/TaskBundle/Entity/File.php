@@ -38,7 +38,7 @@ class File
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="mime", type="datetime", nullable=true)
+     * @ORM\Column(name="created", type="datetime", nullable=true)
      */
     private $created;
 

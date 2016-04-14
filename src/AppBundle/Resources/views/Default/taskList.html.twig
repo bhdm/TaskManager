@@ -1,0 +1,79 @@
+{% extends '@App/layouts.html.twig' %}
+
+{% block content %}
+    <div class="ui form">
+        <div class="inline fields">
+            <div class="one wide field">
+                <div class="ui checkbox">
+                    <input type="checkbox">
+                </div>
+            </div>
+            <div class="eight wide field">
+                <input type="text" placeholder="Задание">
+            </div>
+            <div class="field">
+                <select class="ui search dropdown">
+                    <option value="">Исполнитель</option>
+                    <option>Максим</option>
+                    <option>Александр</option>
+                    <option>Роман</option>
+                </select>
+            </div>
+            <div class="field">
+                <input type="date" class="ui date">
+            </div>
+            <div class="field">
+                <button type="button" class="ui default button">Сохранить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui segments">
+        <div class="ui segment">
+            <p>добавить в раздел Контакты текст</p>
+        </div>
+        <div class="ui secondary segment">
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui dropdown">
+                        Низкий<i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="ui text red item">Низкий</div>
+                            <div class="item">Средний</div>
+                            <div class="item">Высокий</div>
+                            <div class="item">Важный</div>
+                            <div class="item">Критический</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui segments">
+        <div class="ui segment">
+            <p>Top</p>
+        </div>
+        <div class="ui secondary segment">
+            <p>Top</p>
+        </div>
+    </div>
+
+    <div class="ui segments">
+        <div class="ui segment">
+            <p>Top</p>
+        </div>
+        <div class="ui secondary segment">
+            <p>Top</p>
+        </div>
+    </div>
+
+    <div class="ui segments">
+        <div class="ui segment">
+            <p>Top</p>
+        </div>
+        <div class="ui secondary segment">
+            <p>Top</p>
+        </div>
+    </div>
+{% endblock %}

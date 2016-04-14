@@ -20,4 +20,15 @@ class DefaultController extends Controller
     {
         return [];
     }
+
+    /**
+     * @param Request $request
+     * @return array
+     *
+     * @Template()
+     */
+    public function taskListAction(Request $request)
+    {
+        return [];
+    }
 }

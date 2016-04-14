@@ -79,6 +79,11 @@ class Task
      */
     private $files;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\User")
+     */
+    private $performer;
+
     public function __construct()
     {
         $this->created = new \DateTime();
@@ -280,6 +285,23 @@ class Task
     {
         $this->files = $files;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPerformer()
+    {
+        return $this->performer;
+    }
+
+    /**
+     * @param mixed $performer
+     */
+    public function setPerformer($performer)
+    {
+        $this->performer = $performer;
+    }
+
 
 }
 

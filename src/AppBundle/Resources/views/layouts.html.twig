@@ -18,17 +18,18 @@
         <script>
             $(document).ready(function(){
                 $('.ui.dropdown').dropdown();
+                $('.ui.checkbox').checkbox();
+                $('.menu .item').tab();
             })
         </script>
     {% endblock %}
 </head>
 <body>
 <main class="ui container">
-    <div class="ui large menu">
+    <div class="ui menu">
         <div class="brand item ">
             <b>TASK <span class="ui blue">[manager]</span></b>
         </div>
-
         <a class="ui dropdown item">
             <i class="archive icon"></i>Проекты
             <i class="dropdown icon"></i>
@@ -61,43 +62,7 @@
         </div>
     </div>
 
-    <div class="ui link cards">
-        <div class="ui card">
-            <div class="image">
-                <img src="http://semantic-ui.com/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <a class="header">Портал Evrika</a>
-                <div class="meta">
-                    <span class="date">Открытых задач 32</span>
-                </div>
-            </div>
-            <div class="extra content">
-                <a>
-                    <i class="user icon"></i>
-                    22 Friends
-                </a>
-            </div>
-        </div>
-
-        <div class="ui card">
-            <div class="image">
-                <img src="http://semantic-ui.com/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <a class="header">Портал Evrika</a>
-                <div class="meta">
-                    <span class="date">Открытых задач 32</span>
-                </div>
-            </div>
-            <div class="extra content">
-                <a>
-                    <i class="user icon"></i>
-                    22 Friends
-                </a>
-            </div>
-        </div>
-    </div>
+    {% block content %}{% endblock %}
 </main>
 </body>
 </html>
