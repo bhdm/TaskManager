@@ -1,0 +1,12 @@
+label:
+  project: "Проект"
+
+form:
+  title: "Название"
+  description: "Описание"
+  enabled: "Статус"
+  submit: "Сохранить"
+
+button:
+  submit: "Сохранить"
+  cancel: "Отмена"

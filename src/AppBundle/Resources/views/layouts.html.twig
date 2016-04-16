@@ -4,6 +4,9 @@
         {% stylesheets "assets/vendor/semantic/src/semantic.less" %}
         <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="all" />
         {% endstylesheets %}
+        {% stylesheets "bundles/app/less/common.less" %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet" media="all" />
+        {% endstylesheets %}
 
         {#<link href="{{ asset('assets/vendor/font-awesome/css/font-awesome.min.css') }}" type="text/css" rel="stylesheet" media="all" />#}
     {% endblock %}
@@ -61,7 +64,7 @@
         </div>
         </div>
     </div>
-
+    <div class="ui tall stacked segment" id="alert"></div>
     {% block content %}{% endblock %}
 </main>
 </body>

@@ -1,0 +1,59 @@
+{% extends '@App/layouts.html.twig' %}
+
+{% block content %}
+    <div class="ui link cards">
+        <div class="ui card">
+            <div class="image">
+                <img src="http://semantic-ui.com/images/wireframe/image.png">
+            </div>
+            <div class="content">
+                <a class="header">Портал Evrika</a>
+                <div class="meta">
+                    <span class="date">Открытых задач 32</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="user icon"></i>
+                    22 Friends
+                </a>
+            </div>
+        </div>
+
+        <div class="ui card">
+            <div class="image">
+                <img src="http://semantic-ui.com/images/wireframe/image.png">
+            </div>
+            <div class="content">
+                <a class="header">Портал Evrika</a>
+                <div class="meta">
+                    <span class="date">Открытых задач 32</span>
+                </div>
+            </div>
+            <div class="extra content">
+                <a>
+                    <i class="user icon"></i>
+                    22 Friends
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ui center aligned basic segment">
+        <button class="ui teal button icon " id="get-form-project">
+            Create New project
+            <i class="add icon"></i>
+        </button>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/project/project_form.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            $('#get-form-project').click(function () {
+                getFormProject('{{ path('project_add') }}')
+            })
+        })
+    </script>
+{% endblock %}

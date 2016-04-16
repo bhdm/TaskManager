@@ -1,4 +1,8 @@
 project:
-    path:      /
-    defaults:  { _controller: ProjectBundle:Default:index }
+    path:      /list
+    defaults:  { _controller: ProjectBundle:Default:projectList }
     methods: [GET]
+
+project_add:
+    path: /add
+    defaults:   { _controller: ProjectBundle:Default:add}
